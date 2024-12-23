@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="acc.js"></script>
+    <style>
+      .body{
+        height:100vh;
+        width:100%;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Gk11TobT6JYFEMLSdJF28NUInGlARTj_aw&s');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        text-align:center;
+        padding-top: 0%;
+        color: cornflowerblue;
+        
+      }
+
+
+
+    </style>
+</head>
+<body>
+  <div class="body">
+
+    <h1>Account Details:</h1>
+    <p>User name:B.Niharika</p>
+    <p>Account number:xxx00xxxx00xxxx</p>
+    <p>phone number:914682468 </p>
+    <p>Account Balance: <span id="usrBls"></span></p>
+
+
+    <button onclick="home()">HOME</button>
+    <button onclick="cdit()">CREDIT</button>
+    <button onclick="dit()">DEDIT</button>
+
+    
+   <script>
+    function home(){
+        const pin = 1312
+        let x = +prompt("please enter 4 digit pin ")
+        const res = x=== pin;
+        if(res){
+          alert("crebit Granted");
+          window.location.href= "accindex.html";
+        }else{
+          alert("Denied");
+        }
+        }
+    function cdit(){
+        const pin = 1312
+        let x = +prompt("please enter 4 digit pin ")
+        const res = x=== pin;
+        if(res){
+          alert("crebit Granted");
+          window.location.href= "credit.html";
+        }else{
+          alert("Denied");
+        }
+        }
+
+        function dit(){
+            const pin = 1312
+            let x = +prompt("please enter 4 digit pin ")
+            const res = x=== pin;
+            if(res){
+              alert(" debit Granted");
+              window.location.href= "debit.html";
+            }else{
+              alert("Denied");
+            }
+            }
+
+            document.getElementById('usrBls').innerHTML = localStorage.getItem('currentBls')
+       
+    </script> 
+  </div>
+</body>
+</html>

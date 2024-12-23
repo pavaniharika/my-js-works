@@ -1,0 +1,460 @@
+!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"   
+ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+
+
+  <title>Document</title>   
+
+  <style>
+    .main {
+      background-color: powderblue;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://tse3.mm.bing.net/th?id=OIP.tV1Wl5-Ync-6GRrsbc6-MQHaEw&pid=Api&P=0&h=220");
+   
+      display: flex;
+      padding: 2%;
+      padding-left:0%;
+      gap: 22%;
+      height: 200px;
+    }
+
+    .items {
+      background-color: lavenderblush;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://tse1.mm.bing.net/th?id=OIP.x3TMjDEiXsCUAcEld-TcuQHaE8&pid=Api&P=0&h=220");
+   
+   
+   
+    } 
+
+    .card-body {
+      color: salmon;
+      background-color: wheat;
+    }
+
+    .card:hover {
+      width: 100%;
+      height: auto;
+      border:1px solid burlywood;
+      transform: translateY(25px);
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div>
+      <img src="https://tse4.mm.bing.net/th?id=OIP.UbZB6jmwN7cam2Hiw4CZLAHaHa&pid=Api&P=0&h=220"width="150px"height="150px">
+    </div>
+    <div>
+      <h2><i>Women Footware</i></h2>
+    </div>
+    <div>
+      <form action="">
+        <br/><br/><input type="number" id="min" placeholder="min value"><br/>
+        <input type="number" id="max" placeholder="max value">
+        <button id="filterButton" onclick="filter()">filter</button>
+        <br/><br/>
+              <a href="cart.html" class="btn btn-primary"> Cart <span id="cartCount">0</span></a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+                    <div class="items d-flex flex-wrap justify-content-center">
+                    <div class="card m-3 p-1" style="width: 18rem;" data-value="490">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/b/m/g/4-high-kj-1809-kajmi-pink-original-imagt2yxdgkzrkqe.jpeg?q=70"height="200px"width="90px" class="card-img-top" alt="...">
+                     <div class="card-body">
+                          <h5 class="card-title"><h4>kajimi</h4>
+                           <p class="card-text"><h5>women Heels sandals</h5></p>
+                           <p class="card-text">pink,5</p>
+                           <p class="card-text" data-value="490">price:490</p>
+                           <button class="add-to-cart btn btn-primary" data-brand="kajimi"data-name="women Heels sandals"data-size="pink,5" data-price="490" data-image="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/b/m/g/4-high-kj-1809-kajmi-pink-original-imagt2yxdgkzrkqe.jpeg?q=70">Add to Cart</button>
+                       </div>
+                 </div>
+
+
+
+    
+                 <div class="card m-3 p-1" style="width: 18rem; "data-value="899">
+                      <img src="https://www.jiomart.com/images/product/original/rvpbsqulex/shoe-lab-women-s-comfortable-peach-sandal-footwear-for-women-sandals-for-women-wedges-for-women-heels-for-women-non-returnable-product-images-rvpbsqulex-0-202311071212.jpg?im=Resize=(1000,1000)"height="200px"width="200px"class="card-img-top" alt="...">
+                        <div class="card-body">
+                             <h5 class="card-title"><h4>shoe lab</h4>
+                             <p class="card-text"><h5>ladies leather wedges </h5></p>
+                             <p class="card-text">peach,5</p>
+                             <p class="card-text" data-value="899">price:899</p>
+                             <button class="add-to-cart btn btn-primary"data-brand="shoe lab"data-name="ladies leather wedges" data-size="peach,5"  data-price="899" data-image="https://www.jiomart.com/images/product/original/rvpbsqulex/shoe-lab-women-s-comfortable-peach-sandal-footwear-for-women-sandals-for-women-wedges-for-women-heels-for-women-non-returnable-product-images-rvpbsqulex-0-202311071212.jpg?im=Resize=(1000,1000)">Add to Cart</button>
+                         </div>
+                   </div>
+
+               
+
+
+                  <div class="card m-3 p-1" style="width: 18rem; "data-value="3999">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/v/o/x/5-31-650-metro-23-tan-original-imah6g5txaqug24d.jpeg?q=70"height="200px"width="200px" class="card-img-top" alt="...">
+                           <div class="card-body">
+                           <h5 class="card-text"><h4>metro</h4>
+                           <p class="card-text"><h5>boots for women</h5></p>
+                           <p class="card-text">tan,6</p>
+                           <p class="card-text"data-value="3999">price:3999</p>
+                           <button class="add-to-cart btn btn-primary" data-brand="metro" data-name="boots for women"  data-size="tan,6" data-price="3999" data-image="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/v/o/x/5-31-650-metro-23-tan-original-imah6g5txaqug24d.jpeg?q=70">Add to Cart</button>
+                           </div>
+                    </div>
+              
+
+                    
+
+              <div class="card m-3 p-1" style="width: 18rem; "data-value="1349">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/e/c/k/-original-imagg7hz2v3mr2h3.jpeg?q=70"height="200px" width="200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-text"><h4>Bata</h4>
+                    <p class="card-text"><h5>Loafers for women</h5></p>
+                  <p class="card-text">tan,3</p>
+                  <p class="card-text"data-value="1349">price:1349</p>
+                  <button class="add-to-cart btn btn-primary" data-brand="Bata" data-name="Loafers for women" data-size="tan,3" data-price="1349" data-image="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/e/c/k/-original-imagg7hz2v3mr2h3.jpeg?q=70">Add to Cart</button>
+                </div>
+              </div>
+
+
+
+              <div class="card m-3 p-1" style="width: 18rem; "data-value="895">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/r/x/6/6-tm726orange11-6-tryfeet-pink-original-imah6r7wqdr3r3p8.jpeg?q=70"height="200px" width="200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-text"><h4>try feet</h4>
+                    <p class="card-text"><h5>Ethnic ware  for women</h5></p>
+                  <p class="card-text">brown,6</p>
+                  <p class="card-text"data-value="895">price:895</p>
+                  <button class="add-to-cart btn btn-primary" data-brand="try feet" data-name="Ethnic ware  for women" data-size="brown,6" data-price="895" data-image="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/r/x/6/6-tm726orange11-6-tryfeet-pink-original-imah6r7wqdr3r3p8.jpeg?q=70">Add to Cart</button>
+                </div>
+              </div>
+
+
+
+
+              <div class="card m-3 p-1" style="width: 18rem; "data-value="699">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/z/b/d/7-b-jojo-pink-7-earth-step-pink-original-imah37dvqpeptvka.jpeg?q=70"height="200px"width="200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-text"><h4>earthstep</h4>
+                    <p class="card-text"><h5>casuals for women</h5></p>
+                  <p class="card-text">pink,7</p>
+                  <p class="card-text"data-value="699">price:699</p>
+                  <button class="add-to-cart btn btn-primary"  data-brand="earth step"data-name="casuals for women" data-size="pink,7" data-price="699" data-image="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/z/b/d/7-b-jojo-pink-7-earth-step-pink-original-imah37dvqpeptvka.jpeg?q=70">Add to Cart</button>
+                </div>
+              </div>
+              
+
+
+              <div class="card m-3 p-1" style="width: 18rem; "data-value="1999">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/a/j/6/4-hn-1248-shoetopia-rose-gold-original-imah6pqjzzfcvpsv.jpeg?q=70"height="200px" width="200px"class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-text"><h4>shoetopia</h4>
+                    <p class="card-text"><h5>stripped Heels for women</h5></p>
+                  <p class="card-text">gold,7</p>
+                  <p class="card-text"data-value="1999">price:1999</p>
+                  <button class="add-to-cart btn btn-primary"  data-brand="shoetopia" data-name="stripped Heels for women"data-size=">gold,7" data-price="1999" data-image="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/a/j/6/4-hn-1248-shoetopia-rose-gold-original-imah6pqjzzfcvpsv.jpeg?q=70">Add to Cart</button>
+                </div>
+              </div>
+              
+              
+            
+
+              <div class="card m-3 p-1" style="width: 18rem;"data-value="259">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/4/b/u/7-marry-monoction-beige-original-imah44hdwmxsjth8.jpeg?q=70"height="200px"width="200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-text"><h4>monoction</h4>
+                    <p class="card-text"><h5>slides for women</h5></p>
+                    <p class="card-text">biege,5</p>
+                    <p class="card-text"data-value="259">price:259</p>
+                    <button class="add-to-cart btn btn-primary" data-brand="monoction" data-name="slides for women" data-size="beige,5" data-price="259" data-image="https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/4/b/u/7-marry-monoction-beige-original-imah44hdwmxsjth8.jpeg?q=70">Add to Cart</button>
+                  </div>
+                </div>
+                
+
+                
+                <div class="card m-3 p-1" style="width: 18rem;"data-value="675">
+                  <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/t/n/0/8-ss-619-sparx-grey-original-imags336ut8jsy8w.jpeg?q=70"height="200px" width="200px"class="card-img-top" alt="...">
+                  <div class="card-body">
+                  <h5 class="card-text"><h4>sparx</h4>
+                  <p class="card-text"><h5>womens sports sandals</h5></p>
+                  <p class="card-text">grey,grey,5</p>
+                  <p class="card-text"data-value="675">price:675</p>
+                  <button class="add-to-cart btn btn-primary"  data-brand="sparx"data-name="womens sports sandals"data-size="grey,grey,5" data-price="675" data-image="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/t/n/0/8-ss-619-sparx-grey-original-imags336ut8jsy8w.jpeg?q=70">Add to Cart</button>
+                </div>
+              </div>
+        </div>
+        <script>
+          document.getElementById('filterButton').addEventListener('click', function () {
+            let minVal = parseInt(document.getElementById('min').value) || 0;
+            let maxVal = parseInt(document.getElementById('max').value) || Infinity;
+      
+            let dataItems = document.querySelectorAll('.card');
+      
+            dataItems.forEach(function (ele) {
+              let price = parseInt(ele.getAttribute('data-value'));
+      
+              if (price >= minVal && price <= maxVal) {
+                ele.style.display = "block";
+              } else {
+                ele.style.display = "none";
+              }
+            });
+          });
+
+  
+     
+          function addToCart(event) {
+            const product = {
+                brand: event.target.getAttribute('data-brand'),
+                name: event.target.getAttribute('data-name'),
+                size: event.target.getAttribute('data-size'),
+                price: event.target.getAttribute('data-price'),
+                image: event.target.getAttribute('data-image'),
+            };
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            document.getElementById('cartCount').textContent = cart.length;
+        }
+
+  
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', addToCart);
+        });
+        window.onload = function() {
+            updateCartCount();
+        };
+
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+<!--
+index.html
+<html>
+    <head>
+        <title>Phones</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+      <style>
+           *{
+                margin: 0;
+                padding: 0;
+            }
+         body{
+               margin: 0;
+               padding: 0;
+            }
+            #header{
+               text-align: center;
+                background-color:pink;
+                color:black;
+                padding:2px;
+            }   
+          .abc{
+            text-align: center;
+          }
+             
+            .cart-btn{
+              background-color: pink;
+              padding:2px;
+              text-align: end;
+            }       
+        </style>
+        </head>
+         <body>
+              <div id="header">
+             <h1>Mobile Phones</h1>
+             <div class="cart-btn ">
+              <a href="cart.html">
+                  <button id="cartButton" class="btn btn-warning">Cart (<span id="cartCount">0</span>)</button>
+              </a>
+              <div class="abc">
+                <form action="" >
+                  <input type="number" id="min" placeholder="enter min value" />
+                  <input type="number" id="max" placeholder="enter max value" />
+                  <input type="button" value="filter" name="" class="filter">
+              </form>
+            </div>
+          </div>
+            </div>
+           
+           
+        <div class="account bg-info-subtle p-5 flex-wrap d-flex gap-5 justify-content-center ">
+            <div class="card" style="width: 18rem" data-value="15600">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-photo/new-cell-phone-white-background_58702-5167.jpg?t=st=1732599174~exp=1732602774~hmac=234872c26e3bac8a3733b35f96a843d25f365c37c80c0ac069b0833516b76d82&w=740" width="250"><br>
+                  <p class="card-text">Brand:Redmi</p>
+                  <p class="card-text">Operating system:MIUI 14, Android 13.0</p>
+                  <p class="card-text">Ram:4 GB</p>
+                  <p class="card-text">Price:15,600</p>
+                  <p class="card-text">Cpu model:Snapdragon</p>                 
+                  <button class="add-to-cart btn btn-warning " data-name="Redmi" data-price="15600" data-image="https://img.freepik.com/free-photo/new-cell-phone-white-background_58702-5167.jpg?t=st=1732599174~exp=1732602774~hmac=234872c26e3bac8a3733b35f96a843d25f365c37c80c0ac069b0833516b76d82&w=740" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem" data-value="200000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437101.jpg?t=st=1732599694~exp=1732603294~hmac=0775a2afaa3f8353259a88a7bda8ad30e1f3486be7af47e36eb7d30a802d62d9&w=740" width="250"><br>
+                  <p class="card-text">Brand:Apple</p>
+                  <p class="card-text">Operating system:iOS 14</p>
+                  <p class="card-text">Screen size:6.1 Inches</p>
+                  <p class="card-text">Cpu speed:3.23 GHz</p>
+                  <p class="card-text">price:200000</p>                 
+                  <button class="add-to-cart btn btn-warning " data-name="Apple" data-price="200000" data-image="https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437101.jpg?t=st=1732599694~exp=1732603294~hmac=0775a2afaa3f8353259a88a7bda8ad30e1f3486be7af47e36eb7d30a802d62d9&w=740" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="17500">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-vector/triple-camera-black-smartphone-concept-mockup_1017-19784.jpg?t=st=1732600122~exp=1732603722~hmac=6aa47ec850a5f545232287cc71979b9cdc447748ae769b0928c90db82b870ac5&w=740" width="250"><br>
+                  <p class="card-text">Brand:Samsung</p>
+                  <p class="card-text">Operating system:Android 14</p>
+                  <p class="card-text">Ram:4 GB</p>
+                  <p class="card-text">Cpu model:MediaTek Helio</p> 
+                  <p class="card-text">price:17500</p>                
+                  <button class="add-to-cart btn btn-warning " data-name="Samsung" data-price="17500" data-image="https://img.freepik.com/free-vector/triple-camera-black-smartphone-concept-mockup_1017-19784.jpg?t=st=1732600122~exp=1732603722~hmac=6aa47ec850a5f545232287cc71979b9cdc447748ae769b0928c90db82b870ac5&w=740" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="43000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://images.unsplash.com/photo-1527747367590-09565c700ddd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250"><br>
+                  <p class="card-text">Brand:OnePlus</p>
+                  <p class="card-text">Operating system:OxygenOS</p>
+                  <p class="card-text">Ram:4 GB</p>
+                  <p class="card-text">price:43000</p>
+                  <p class="card-text">Cpu model:Snapdragon</p>                 
+                  <button class="add-to-cart btn btn-warning " data-name="OnePlus" data-price="43000" data-image="https://images.unsplash.com/photo-1527747367590-09565c700ddd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="17000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://images.unsplash.com/photo-1713470599405-3ca0ae1363f8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250"><br>
+                  <p class="card-text">Brand:	Vivo</p>
+                  <p class="card-text">Operating system:</p>
+                  <p class="card-text">Ram:4 GB</p>
+                  <p class="card-text">price:17000</p>
+                  <p class="card-text">Cpu model:Snapdragon</p>                 
+                  <button class="add-to-cart btn btn-warning " data-name="Vivo" data-price="17000" data-image="https://images.unsplash.com/photo-1713470599405-3ca0ae1363f8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="30000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-vector/realistic-phones-different-views_52683-28436.jpg?t=st=1732602324~exp=1732605924~hmac=096f224ea145baaab1ca5adbab48b4fdf28e66355afc92eaddc8a9524298a110&w=740" width="250"><br>
+                  <p class="card-text">Brand:realme</p>
+                  <p class="card-text">Operating system:	Android 14</p>
+                  <p class="card-text">Ram:4 GB</p>
+                  <p class="card-text">price:30000</p>
+                  <p class="card-text">Cpu model:Snapdragon</p>                 
+                  <button class="add-to-cart btn btn-warning " data-name="realme" data-price="30000" data-image="https://img.freepik.com/free-vector/realistic-phones-different-views_52683-28436.jpg?t=st=1732602324~exp=1732605924~hmac=096f224ea145baaab1ca5adbab48b4fdf28e66355afc92eaddc8a9524298a110&w=740" width="250">Add to Cart</button>
+
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="2000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-photo/wireless-earbuds-with-neon-cyberpunk-style-lighting_23-2151074264.jpg?t=st=1732684915~exp=1732688515~hmac=2432f629c94daacfc63063320d6fd27e8b6e4c7ff079b6cc6a08d5379e135a68&w=740" width="250"><br>
+                  <p class="card-text">Brand:	boAt</p>
+                  <p class="card-text">Connector Type:USB</p>
+                  <p class="card-text">Colour:Emerald Green</p>
+                  <p class="card-text">price:2000</p>
+                  <p class="card-text">Battery Capacity:20000 Milliamp Hours</p>                 
+                  <button class="add-to-cart btn btn-warning " data-name="boAt" data-price="2000" data-image="https://img.freepik.com/free-photo/wireless-earbuds-with-neon-cyberpunk-style-lighting_23-2151074264.jpg?t=st=1732684915~exp=1732688515~hmac=2432f629c94daacfc63063320d6fd27e8b6e4c7ff079b6cc6a08d5379e135a68&w=740" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="20000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-photo/finger-touching-smartwatch-s-screen_1134-388.jpg?t=st=1732685384~exp=1732688984~hmac=a1cdd8cbc60d51a982d9fcceacd53fe6a7f581d31b5ac04c5e77d5a82c9f72b5&w=740" width="250"><br>
+                  <p class="card-text">Special Feature:music player control</p>
+                  <p class="card-text">Operating system:Smartwatch</p>
+                  <p class="card-text">Ram:2 GB</p>
+                  <p class="card-text">price:20000</p>
+                  <p class="card-text">Battery Cell Composition:Lithium Polymer</p>  
+                  <button class="add-to-cart btn btn-warning " data-name="music player control" data-price="20000" data-image="https://img.freepik.com/free-photo/finger-touching-smartwatch-s-screen_1134-388.jpg?t=st=1732685384~exp=1732688984~hmac=a1cdd8cbc60d51a982d9fcceacd53fe6a7f581d31b5ac04c5e77d5a82c9f72b5&w=740" width="250">Add to Cart</button>
+               
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="3000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://cdn.pixabay.com/photo/2017/08/10/03/49/nokia-2617880_1280.jpg" width="250"><br>
+                  <p class="card-text">Brand:Nokia</p>
+                  <p class="card-text">Operating system:S30+</p>
+                  <p class="card-text">Ram:3 GB</p>
+                  <p class="card-text">price:3000</p>
+                  <p class="card-text">Screen Size:2 Inches</p>                 
+                  <button class="add-to-cart btn btn-warning " data-name="Nokia" data-price="3000" data-image="https://cdn.pixabay.com/photo/2017/08/10/03/49/nokia-2617880_1280.jpg" width="250">Add to Cart</button>
+                </div>
+              </div>
+              </div> 
+
+              <script>
+                document.querySelectorAll('.card').forEach(function (ele) {
+                    document.querySelector('.filter').addEventListener('click', function () {
+                        let minVal = parseInt(document.getElementById('min').value);
+                        let maxVal = parseInt(document.getElementById('max').value);
+                        let dataItems = ele.getAttribute('data-value');
+                        if(dataItems >= minVal && dataItems <= maxVal){
+                            ele.style.display="block"
+                        }
+                        else{
+                            ele.style.display="none"
+                        }
+                        
+                    })
+                })
+              
+      
+     
+        function addToCart(event) {
+            const product = {
+                brand: event.target.getAttribute('data-brand'),
+                name: event.target.getAttribute('data-name'),
+                size: event.target.getAttribute('data-size'),
+                price: event.target.getAttribute('data-price'),
+                image: event.target.getAttribute('data-image'),
+             
+            };
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            document.getElementById('cartCount').textContent = cart.length;
+        }
+
+  
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', addToCart);
+        });
+        window.onload = function() {
+            updateCartCount();
+        };
+    </script>
+
+           
+</body>
+</html>
+-->

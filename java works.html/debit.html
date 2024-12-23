@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="acco.js"></script>
+</head>
+
+<style>
+    body{
+         background-color: #F5EFFF;
+         color: #A594F9;
+    }
+  </style>
+<body>
+    <form action="">
+        <input type="number" name="" id="dbtamt">
+        <input type="submit" name="" id="debsub">
+    </form>
+    <a href="acc.html">check balance</a>
+    <script>
+        let accountbalance = localStorage.getItem('currentBls');
+        document.getElementById('debsub').addEventListener('click' , function(){
+            let xValue = parseInt(accountbalance);
+            let dbtval = document.getElementById('dbtamt').value;
+            const dbtRes = xValue - dbtval
+            alert(dbtRes)
+            localStorage.setItem('currentBls' , dbtRes)
+        })
+    </script>
+
+   
+</body>
+</html>

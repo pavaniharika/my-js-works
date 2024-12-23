@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="acco.js"></script>
+</head>
+<style>
+    body{
+         background-color: #F5EFFF;
+         color: #A594F9;
+    }
+  </style>
+<body>
+    <form action="">
+<input type="number"   id="creamt">
+<input type="submit"    id="cresub">
+    </form>
+
+<a href="acc.html">check balance</a>
+
+<script>
+
+ let accountbalance = 50000;
+ document.getElementById('cresub').addEventListener('click',  function(){
+    let creval= document.getElementById('creamt').value;
+    let parsecredit = parseInt(creval)
+    const creres = accountbalance + parsecredit
+    alert(creres)
+    localStorage.setItem('currentBls', creres)
+ })
+
+</script>
+
+</body>
+</html>
+
